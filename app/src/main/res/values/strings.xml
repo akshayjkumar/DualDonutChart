@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Dual Donut Chart</string>
+    <string name="chartTitle">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="refresh">Refresh</string>
+</resources>

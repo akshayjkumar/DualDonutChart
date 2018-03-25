@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#40403F</color>
+    <color name="colorPrimaryDark">#40403F</color>
+    <color name="colorAccent">#F2E527</color>
+
+    <color name="colorRingPrimary">#F2E527</color>
+    <color name="colorRingPrimaryLight">#F5EB56</color>
+    <color name="colorRingSecondary">#40403F</color>
+    <color name="colorRingSecondaryLight">#5A5A58</color>
+    <color name="colorRingBase">#F2F2F2</color>
+    <color name="colorChartText">#F2F2F2</color>
+    <color name="colorBackground">#A6A165</color>
+</resources>

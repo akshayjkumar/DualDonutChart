@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context="com.ajdev.dualdonutchart.MainActivity">
+
+    <com.ajdev.dualdonutchart.DualDonutChart
+        android:id="@+id/dualDonutChart"
+        android:layout_marginTop="20dp"
+        app:baseColor="@color/colorRingBase"
+        app:textColor="@color/colorChartText"
+        app:title="@string/chartTitle"
+        app:positiveColor="@color/colorRingPrimary"
+        app:positiveColorLight="@color/colorRingPrimaryLight"
+        app:negativeColor="@color/colorRingSecondary"
+        app:negativeColorLight="@color/colorRingSecondaryLight"
+        app:positiveValue="200"
+        app:negativeValue="150"
+        app:animation="true"
+        app:ltr="true"
+        android:layout_width="250dp"
+        android:layout_height="170dp"
+        android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout
+        android:id="@+id/legend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/dualDonutChart">
+
+        <View
+            android:id="@+id/legendMale"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@color/colorRingPrimary"/>
+
+        <TextView
+            android:id="@+id/legendMaleText"
+            android:layout_toEndOf="@+id/legendMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/colorChartText"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingTop="2dp"
+            android:text="@string/male"/>
+
+        <View
+            android:layout_toEndOf="@+id/legendMaleText"
+            android:id="@+id/legendFemale"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@color/colorRingSecondary"/>
+
+        <TextView
+            android:id="@+id/legendFemaleText"
+            android:layout_toEndOf="@+id/legendFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/colorChartText"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="2dp"
+            android:text="@string/female"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnRefresh"
+        android:layout_below="@+id/legend"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/refresh"
+        android:layout_margin="20dp"/>
+
+</RelativeLayout>
