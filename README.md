@@ -50,8 +50,7 @@ Specifies the layout direction. LTR if true and RTL otherwise. Defaults to True.
 
 # APIs
 ## setValues(int positive, int negative, boolean animation)
-setValues() helps to plot the chart dynamically. First and Second params specifies the Positive and Negative values respectively. Third boolean parameter specifies if Athe chart animation is shown when values are changed dynamically.
-
+setValues() helps to plot the chart dynamically. First and second params specifies the positive and negative values respectively. Third boolean parameter specifies if the chart animation is shown when values are changed dynamically.
 ```
 
 DualDonutChart dualDonutChart = (DualDonutChart) findViewById(R.id.dualDonutChart);
@@ -71,17 +70,17 @@ dualDonutChart.setValues(positive,negative,true);
 ## setAnimationListener(DualDonutChart.AnimationListener)
 Callback events to listen to the chart animation states. onAnimationStart() is called when chart animation commences and onAnimationEnd() when all animations are completed.
 ```
+
 dualDonutChart.setAnimationListener(new DualDonutChart.AnimationListener() {
     @Override
     public void onAnimationStart() {
-        btnRefresh.setEnabled(false);
+        // Animation started
     }
 
     @Override
     public void onAnimationEnd() {
-        btnRefresh.setEnabled(true);
+        // Animations completed
     }
 });
 
 ```
-
